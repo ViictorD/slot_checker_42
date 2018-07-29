@@ -86,7 +86,7 @@ createApplication(({ app, callbackUrl }) => {
 		scope: 'public projects'
 	});
 	
-	// Initial page redirecting to Github
+	// Initial page redirecting to 42
 	app.get('/auth', (req, res) => {
 		console.log(authorizationUri);
 		res.redirect(authorizationUri);
